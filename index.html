@@ -87,15 +87,22 @@
     }
     
     .split-layout .card {
-      background: red;
-      color: white;
-      flex: 1 1 calc(50% - 10px); /* Se muestran dos tarjetas por fila */
-      padding: 4rem;
-      border-radius: 30px;
-      text-align: center;
-      margin: 5px;
-      font-size: 25px;
+        background: red;
+        color: white;
+        flex: 1 1 calc(50% - 10px);
+        padding: 4rem;
+        border-radius: 30px;
+        text-align: center;
+        margin: 5px;
+        font-size: 25px;
+        cursor: pointer;                /* Muestra la mano de "click" */
+        transition: background 0.3s;    /* Para suavizar la transición */
     }
+
+    .split-layout .card:hover {
+        background: #b30000;            /* Un rojo más oscuro en hover */
+    }
+
     
     @media (max-width: 768px) {
       .split-layout {
@@ -171,11 +178,13 @@
         <p id="subtitulo">Linus Torvalds: "Talk is cheap. Show me the code"</p>
       </div>
       <div class="right" id="tarjetas">
-        <div class="card">Sobre mi</div>
-        <div class="card">Habilidades</div>
-        <div class="card">Proyectos</div>
-        <div class="card">Contacto</div>
+        <a class="card" href="sobremi.html">Sobre mi</a>
+        <a class="card" href="habilidades.html">Habilidades</a>
+        <a class="card" href="proyectos.html">Proyectos</a>
+        <a class="card" href="contacto.html">Contacto</a>
       </div>
+      
+      
     </section>
 
     <main>
