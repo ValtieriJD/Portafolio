@@ -13,3 +13,7 @@ section {
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
 }
+
+#valtieri-landing {
+    font-size: 50px;
+}
